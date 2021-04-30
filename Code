@@ -1,0 +1,14 @@
+import functools
+
+n = int(input(':'))
+i =1
+r = []
+while i <= n:
+    r.clear()
+    for k in range(i):
+        r.append(i)
+    delimeter = ' '
+    r2 = functools.reduce(lambda a,b : str(a) + delimeter + str(b),r)
+    print(r2)
+    i += 1
+
